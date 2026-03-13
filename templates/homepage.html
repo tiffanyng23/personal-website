@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block head %} 
+<h1> Personal Projects </h1>
+{% endblock head %}
+
+{% block body %}
+<div class="project-container">
+    <div class="item">
+        <h3>Spotify Artist Explore Page</h3>
+        <a href="/spotify-explore">More information (includes demo link)</a>
+        <p> A reimagined Spotify artist page with the aim of encouraging a more thorough and album-driven exploration of an 
+            artist's discography. The artist page displays album tracks based on Spotify popularity trends, with a focus on 
+            identifying "mainstream" and "hipster" tracks. Albums are displayed in a table with information including popularity 
+            score and album length, making it easier for users to view key album information on one page.
+        </p>
+    </div>
+    <div class="item">
+        <h3>Earthquake Tracker</h3>
+        <a> More information (includes demo link) </a>
+        <p> A global earthquake tracker that integrates the USGS earthquake api to provide live updates on earthquake events.
+            Features an earthquake counter, scatter map, scatter plot, and data table that are customizable by time window, depth, 
+            and magnitude of earthquakes to allow for user-driven analysis of earthquakes.
+        </p>
+    </div>
+    <div class="item">
+        <h3>NASA Image Repository</h3>
+        <a> More information (includes demo link) </a>
+    </div>
+</div>
+{% endblock body %}

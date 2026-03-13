@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>{% block title %} Home {% endblock title %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li> <a href="/"> Home </a> </li>
+            <li> <a href="/about"> My Background </a> </li>
+            <li> <a href="https://github.com/tiffanyng23"> GitHub </a></li>
+            <li> <a href="/contact"> Contact </a> </li>
+        </ul>
+    </nav>
+    {% block head %}
+        <h1> Personal Website </h1>
+    {% endblock head %}
+    {% block body %}
+        <p>content</p>
+    {% endblock body %}
+
+</body>
+
+</html>

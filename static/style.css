@@ -1,0 +1,30 @@
+body {
+  background-color: rgb(242, 232, 213);
+}
+
+nav {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+}
+
+ul li a {
+  display: block;
+  color: rgb(0,0,0);
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: rgb(177, 209, 222)
+}
+
+.project-container {
+  display:flex;
+  justify-content: space-around;
+}

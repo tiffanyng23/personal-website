@@ -29,6 +29,9 @@ def spotify():
     return render_template("spotify.html")
 
 # NASA Image Repository
-@app.route("nasa-images")
+@app.route("/nasa-images")
 def nasa():
     return render_template("nasa.html")
+
+if __name__ == "__main__":
+    app.run(debug=True)
