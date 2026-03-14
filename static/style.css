@@ -2,6 +2,14 @@ body {
   background-color: rgb(242, 232, 213);
 }
 
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
 nav {
     display: flex;
 }
@@ -21,10 +29,17 @@ ul li a {
 }
 
 ul li a:hover {
-  background-color: rgb(177, 209, 222)
+  background-color: rgb(181, 179, 179)
 }
 
 .project-container {
   display:flex;
   justify-content: space-around;
+}
+
+.item {
+  background-color: rgb(242, 232, 213);
+  flex: 1;
+  padding: 5px;
+  margin: 5px;
 }

@@ -1,14 +1,13 @@
 {% extends "base.html" %}
 
 {% block head %} 
-<h1> Personal Projects </h1>
+<h1> My Projects </h1>
 {% endblock head %}
 
 {% block body %}
 <div class="project-container">
     <div class="item">
-        <h3>Spotify Artist Explore Page</h3>
-        <a href="/spotify-explore">More information (includes demo link)</a>
+        <a href="/spotify-explore"><h3>Spotify Artist Explore Page</h3></a>
         <p> A reimagined Spotify artist page with the aim of encouraging a more thorough and album-driven exploration of an 
             artist's discography. The artist page displays album tracks based on Spotify popularity trends, with a focus on 
             identifying "mainstream" and "hipster" tracks. Albums are displayed in a table with information including popularity 
@@ -16,16 +15,18 @@
         </p>
     </div>
     <div class="item">
-        <h3>Earthquake Tracker</h3>
-        <a> More information (includes demo link) </a>
+        <a href="/earthquake-tracker"><h3>Earthquake Tracker</h3></a>
         <p> A global earthquake tracker that integrates the USGS earthquake api to provide live updates on earthquake events.
             Features an earthquake counter, scatter map, scatter plot, and data table that are customizable by time window, depth, 
             and magnitude of earthquakes to allow for user-driven analysis of earthquakes.
         </p>
     </div>
     <div class="item">
-        <h3>NASA Image Repository</h3>
-        <a> More information (includes demo link) </a>
+        <a href="/nasa-images"><h3>NASA Image Repository</h3></a>
+        <p> A website that uses the NASA Open API to display recent images of Earth taken from the EPIC camera in space,
+            and NASA's Astronomy Picture of the Day (APOD) - daily photographs released by NASA. This website also features 
+            a map displaying wildfire, severe storm, and volcanic eruption events. 
+        </p>
     </div>
 </div>
 {% endblock body %}
