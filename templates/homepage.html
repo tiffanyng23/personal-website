@@ -1,31 +1,27 @@
 {% extends "base.html" %}
 
 {% block head %} 
-<h1> My Projects </h1>
+<h1>Tiffany's Personal Portfolio</h1>
 {% endblock head %}
 
 {% block body %}
 <div class="project-container">
-    <div class="item">
+    <div class="home-item">
         <a href="/spotify-explore"><h3>Spotify Artist Explore Page</h3></a>
-        <p> A reimagined Spotify artist page with the aim of encouraging a more thorough and album-driven exploration of an 
-            artist's discography. The artist page displays album tracks based on Spotify popularity trends, with a focus on 
-            identifying "mainstream" and "hipster" tracks. Albums are displayed in a table with information including popularity 
-            score and album length, making it easier for users to view key album information on one page.
+        <p> A reimagined Spotify Artist Page with the aim of encouraging a more thorough and album-driven exploration of an 
+            artist's discography.
         </p>
     </div>
-    <div class="item">
+    <div class="home-item">
         <a href="/earthquake-tracker"><h3>Earthquake Tracker</h3></a>
-        <p> A global earthquake tracker that integrates the USGS earthquake api to provide live updates on earthquake events.
-            Features an earthquake counter, scatter map, scatter plot, and data table that are customizable by time window, depth, 
-            and magnitude of earthquakes to allow for user-driven analysis of earthquakes.
+        <p> An earthquake tracker that provides real-time updates on global earthquake events, featuring a live earthquake counter 
+            and data visualizations, allowing for user-driven analysis of earthquakes.
         </p>
     </div>
-    <div class="item">
+    <div class="home-item">
         <a href="/nasa-images"><h3>NASA Image Repository</h3></a>
-        <p> A website that uses the NASA Open API to display recent images of Earth taken from the EPIC camera in space,
-            and NASA's Astronomy Picture of the Day (APOD) - daily photographs released by NASA. This website also features 
-            a map displaying wildfire, severe storm, and volcanic eruption events. 
+        <p> A webpage that displays a repository of recent images of Earth taken from space, daily astronomy photographs released by NASA, 
+            and a map displaying real-time updates on natural events. 
         </p>
     </div>
 </div>

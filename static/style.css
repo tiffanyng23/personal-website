@@ -1,13 +1,23 @@
 body {
-  background-color: rgb(242, 232, 213);
+  background-color: rgb(230, 242, 245);
 }
 
 h1 {
   text-align: center;
+  font-family: "Helvetica", "Garamond";
 }
 
 h3 {
   text-align: center;
+  font-family: "Helvetica", "Garamond";
+}
+
+h4 {
+  font-family: "Helvetica", "Garamond";
+}
+
+p {
+  font-family: "Helvetica", "Garamond";
 }
 
 nav {
@@ -26,10 +36,12 @@ ul li a {
   color: rgb(0,0,0);
   padding: 14px 16px;
   text-decoration: none;
+  font-family: "Helvetica", "Garamond";
 }
 
 ul li a:hover {
-  background-color: rgb(181, 179, 179)
+  background-color: rgb(166, 210, 222);
+  font-family: "Helvetica", "Garamond";
 }
 
 .project-container {
@@ -37,9 +49,29 @@ ul li a:hover {
   justify-content: space-around;
 }
 
-.item {
-  background-color: rgb(242, 232, 213);
-  flex: 1;
-  padding: 5px;
-  margin: 5px;
+.home-item {
+  margin: 10px;
+  padding: 15px;
+  background-color: rgba(198, 205, 207, 0.5);
+  border-radius: 15px;
+}
+
+.about-page {
+  margin: 10px;
+  padding: 15px;
+}
+
+.spotify {
+  display: flex;
+}
+
+.spotify-layout {
+  display: flex;
+}
+
+.spotify-item {
+  margin: 10px;
+  padding: 15px;
+  background-color: rgba(198, 205, 207, 0.5);
+  border-radius: 15px;
 }
