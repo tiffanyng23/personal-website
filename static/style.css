@@ -21,13 +21,14 @@ p {
 }
 
 nav {
-    display: flex;
+  background-color: rgba(166, 210, 222, 0.5);
+  display: flex;
 }
 
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     display:flex;
 }
 
@@ -62,11 +63,18 @@ ul li a:hover {
 }
 
 .spotify {
-  display: flex;
+  display: grid;
 }
 
 .spotify-layout {
   display: flex;
+}
+
+.spotify-item-top {
+  margin: 10px;
+  padding: 15px;
+  background-color: rgba(198, 205, 207, 0.5);
+  border-radius: 15px;
 }
 
 .spotify-item {
