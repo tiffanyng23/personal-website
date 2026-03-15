@@ -6,52 +6,40 @@
 
 {% block body %}
 <a><h3>Project Demo Hosted on Heroku</h3></a>
-<h3>Technologies: Python (Plotly Dash Framework, Pandas), HTML, CSS</h3>
-<div class = "spotify">
-    <div class="spotify-item-top">
-        <h4>Background</h4>
-        <p>
-            This project is my reimagined version of the artist page on Spotify using Spotify's Web API. I wanted to build the Spotify Artist Page 
-            in a way that focuses on showcasing albums and the album's tracks. I find that an artist's album showcases more of their artistic vision compared to non-album singles and tracks they are featured in.
-            I prefer album-based listening over playlists because I like concept albums where I can notice overarching sounds or themes across each track. 
-            I really feel that through this project I've been able to create an artist page that combines my album-based listening with displaying tracks
-            dynamically based on Spotify popularity, which I hope will encourage more exploration of an artist's discography. 
-        </p>
-    </div>
+<h3>Python (Plotly Dash Framework, Pandas), HTML, CSS</h3>
+<div class="project-item">
+    <h3>About this Project</h3>
+    <p>
+        This project is my reimagined version of the artist page on Spotify using Spotify's Web API. My goal with this project was to build the Spotify Artist Page 
+        in a way that focuses on showcasing albums and the album's tracks. I generally prefer to explore artist's through their albums since I feel that their albums show their artistic vision compared to non-album tracks.
+        I also prefer album-based listening over playlists because I like concept albums where I can notice overarching sounds or themes across each track. 
+        I really feel that through this project I've been able to create an artist page that combines an album-based listening approach with displaying tracks
+        dynamically based on Spotify popularity value (scored from 0-100, based on number of streams and recency of streams), which I hope will encourage deeper exploration of an artist's discography. 
+    </p>
+    <h4>Albums Tab</h4>
+    <p>
+        The Albums Tab displays all the artists albums in a table, which allows for users to search, filter, and sort album information.
+    </p>
+    <h4>Album Tracks Tab</h4>
+    <p>
+        The Album Tracks Tab displays all the tracks from artist albums (not including non-album tracks). 
+        There are 3 lists sorted based on the Spotify popularity score. The "Most Mainstream Album Tracks" are the 10
+        tracks of the highest popularity value, providing tracks that are trending and are likely fan favourites. The "Most Hipster Album Tracks"
+        are the 10 tracks with the lowest popularity value, suitable for finding hidden gems. The middle list allows for users to create a customized list based on the Hipster vs. Mainstream ratio, providing a list of 5
+        tracks that leans more "mainstream" or more "hipster".
+    </p>
+    <p>
+        The bottom portion of this tab provides a bar chart displaying the artist's album tracks based on its popularity value, in either ascending or descending order.
+    </p>
+    <h4>Still Not Sure Where to Start Tab</h4>
+    <p>
+        This tab is perfect for users who simply want to dive into any album or track by the artist. This tab features the Spotify Generated Top Tracks
+        which are the 10 featured tracks found on the top of an artist page on the Spotify app. This will differ from the "Most Mainstream Album Tracks"
+        list since it also includes non-album tracks and tracks where the artist is a feature. 
+        This tab also has two shuffle-like buttons: a random album generator and random album track generator. By clicking on the button, the user will be redirected to a randomnly selected album or track respectively.
+    </p>
 </div>
-<div class="spotify-layout">
-    <div class="spotify-item">
-        <h4>Albums Tab</h4>
-        <p>
-            The Albums Tab displays all the artists albums in a table, including information such as release date, number of tracks, Spotify 
-            popularity score, and links to each album on the Spotify app. The Spotify popularity value is between 0-100 and is based on number of streams and how recent the streams were. This score gives users an idea
-            of how much an album is trending, with a higher score meaning that it has more recent listens compared to an album with a lower score.
-        </p>
-    </div>
-    <div class="spotify-item">
-        <h4>Album Tracks Tab</h4>
-        <p>
-            The Album Tracks Tab displays all the tracks from the artist's albums. It doesn't include non-album singles or tracks the artist is featured in.
-            There are 3 lists sorted based on the Spotify popularity score. The "Most Mainstream Album Tracks" are the 10
-            tracks of the highest popularity value, providing tracks that are trending and are likely fan favourites. The "Most Hipster Album Tracks"
-            are the 10 tracks with the lowest popularity value, suitable for finding hidden gems. The middle list allows for users to create a customized list based on the Hipster vs. Mainstream ratio, providing a list of 5
-            tracks that leans more "mainstream" or more "hipster", depending on what the user is looking for. Each list is hyperlinked, 
-            making it simple for the user to check out the track.
-        </p>
-        <p>
-            The bottom portion of this tab provides a bar chart displaying the artist's album tracks based on its popularity value, in either ascending or descending order.
-            This is another way users can discover tracks. The bars are all hyperlinked, allowing for users to simply click on the bar to listen to the track.
-        </p>
-    </div>
-    <div class="spotify-item">
-        <h4>Still Not Sure Where to Start Tab</h4>
-        <p>
-            This tab is perfect for users who simply want to dive into any album or track by the artist. This tab features the Spotify Generated Top Tracks
-            which are the 10 featured tracks found on the top of an artist page on the Spotify app. This will differ from the "Most Mainstream Album Tracks"
-            list since it also includes non-album tracks and tracks where the artist is a feature. 
-            This tab also has two shuffle-like buttons: a random album generator and random album track generator. By clicking on the button, the user will be redirected to a randomnly selected album or track respectively.
-        </p>
-    </div>
-</div>
+
+
 
 {% endblock body %}

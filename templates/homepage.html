@@ -1,28 +1,31 @@
 {% extends "base.html" %}
 
-{% block head %} 
-<h1>Tiffany's Personal Portfolio</h1>
-{% endblock head %}
-
 {% block body %}
-<div class="project-container">
-    <div class="home-item">
-        <a href="/spotify-explore"><h3>Spotify Artist Explore Page</h3></a>
-        <p> A reimagined Spotify Artist Page with the aim of encouraging a more thorough and album-driven exploration of an 
-            artist's discography.
-        </p>
-    </div>
-    <div class="home-item">
-        <a href="/earthquake-tracker"><h3>Earthquake Tracker</h3></a>
-        <p> An earthquake tracker that provides real-time updates on global earthquake events, featuring a live earthquake counter 
-            and data visualizations, allowing for user-driven analysis of earthquakes.
-        </p>
-    </div>
-    <div class="home-item">
-        <a href="/nasa-images"><h3>NASA Image Repository</h3></a>
-        <p> A webpage that displays a repository of recent images of Earth taken from space, daily astronomy photographs released by NASA, 
-            and a map displaying real-time updates on natural events. 
-        </p>
+<div class="background-container">
+    <div class="project-container">
+        <div class="home-item">
+            <a href="/spotify-explore"><h3>Spotify Artist Explore Page</h3></a>
+            <p> 
+                A reimagined Spotify Artist Page created to encourage deeper and more album-based exploration of an 
+                artist's discography.
+            </p>
+        </div>
+        <div class="home-item">
+            <a href="/earthquake-tracker"><h3>Earthquake Tracker Dashboard</h3></a>
+            <p> 
+                A global earthquake tracker that provides real-time updates on earthquakes, featuring a live earthquake counter 
+                and data visualizations depicting occurences to allow for user-driven analysis of earthquake events.
+            </p>
+        </div>
+        <div class="home-item">
+            <a href="/nasa-images"><h3>NASA Image Repository</h3></a>
+            <p> 
+                A webpage that features NASA-released images of Earth taken from space, NASA's astronomy picture of the day, 
+                and a map displaying real-time occurences of various natural events. 
+            </p>
+        </div>
     </div>
 </div>
+
+
 {% endblock body %}

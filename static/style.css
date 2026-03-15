@@ -21,7 +21,6 @@ p {
 }
 
 nav {
-  background-color: rgba(166, 210, 222, 0.5);
   display: flex;
 }
 
@@ -41,20 +40,40 @@ ul li a {
 }
 
 ul li a:hover {
-  background-color: rgb(166, 210, 222);
+  background-color: rgba(166, 210, 222, 0.5);
   font-family: "Helvetica", "Garamond";
 }
 
-.project-container {
-  display:flex;
-  justify-content: space-around;
+
+.background-container {
+  position: absolute;
+  z-index: 0;
+  left:0;
+  right:0;
+  display:grid;
+  height: 100%;
+  width: 100%;
+  background-image: url('waves.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
+.project-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .home-item {
-  margin: 10px;
-  padding: 15px;
+  margin: 20px;
+  padding: 5px;
   background-color: rgba(198, 205, 207, 0.5);
   border-radius: 15px;
+  text-align: center;
 }
 
 .about-page {
@@ -62,15 +81,7 @@ ul li a:hover {
   padding: 15px;
 }
 
-.spotify {
-  display: grid;
-}
-
-.spotify-layout {
-  display: flex;
-}
-
-.spotify-item-top {
+.project-item {
   margin: 10px;
   padding: 15px;
   background-color: rgba(198, 205, 207, 0.5);

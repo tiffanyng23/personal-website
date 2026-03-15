@@ -5,13 +5,12 @@ app = Flask(__name__)
 # Home Page 
 @app.route("/")
 def main():
-    #insert slideshow of project descriptions
+    #insert slideshow of images
     return render_template("homepage.html")
 
 # About Me
 @app.route("/about")
 def about():
-    #insert slideshow of images
     return render_template("about.html")
 
 # Contact
