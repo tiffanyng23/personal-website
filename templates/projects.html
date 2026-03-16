@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %} Project Portfolio {% endblock title %}
+
+{% block body %}
+<div class="container mt-4">
+    <h1 class="text-center mb-3"> Project Porfolio </h1>
+    <div class="row g-3">
+        <div class="col-6 mt-2 mb-2">
+            <div class="card h-100 project-card">
+                <h2 class="card-title text-center">Spotify Artist Page</h2>
+                <h6 class="card-subtitle text-center">Python (Plotly Dash Framework, Pandas), HTML, CSS</h6>
+                <img src="/static/images/spotify.png" class="card-img-top card-img-bottom mt-2 mb-2" alt="Project img">
+                <div class="card-body">
+                    <p class="card-text">
+                        A reimagined version of the artist page on Spotify, integrating data from Spotify's Web API. My goal with this project was to build the Spotify Artist Page 
+                        in a way that focuses on showcasing albums and album tracks. I generally prefer to explore an artist's music through albums over playlists or non-album tracks 
+                        since I feel listening to an album shares a lot of the artist's true artistic vision compared to playlist. 
+                        From this project, I was able to integrate my album-based listening approach with displaying tracks dynamically based on Spotify popularity value 
+                        (scored from 0-100, based on number of streams and recency of streams).
+                    </p>
+                    <a href="#" class="card-link">Demo Hosted on Heroku</a>
+                    <a href="https://github.com/tiffanyng23/spotify-app" target="_blank" class="card-link">Instructions on GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 mt-2 mb-2">
+            <div class="card h-100 project-card">
+                <h2 class="card-title text-center">Earthquake Tracker</h2>
+                <h6 class="card-subtitle text-center">Python (Plotly Dash Framework, Pandas), HTML, CSS</h6>
+                <img src="/static/images/earthquake.png" class="card-img-top card-img-bottom mt-2 mb-2" alt="Project img">
+                <div class="card-body">
+                     <p class="card-text">
+                        A global earthquake tracker dashboard that provides real-time updates on earthquakes using the USGS Earthquake API. 
+                        It features a live earthquake counter that can be filtered by earthquake magnitude and depth, 
+                        provides updated earthquake counts at various time windows.
+                        The dashboard features a customization panel that can be used to customize time window, magnitude, and depth
+                        for various data visualizations. The goal of this project was to create a resource that depicts live earthquake data in 
+                        an accessible and insightful way, and allows for effective user-driven insights to be gathered on earthquake events. 
+                    </p>
+                    <a href="#" class="card-link">Demo Hosted on Heroku</a>
+                    <a href="https://github.com/tiffanyng23/earthquake-tracker" target="_blank" class="card-link">Instructions on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3 mb-5 g-3">
+        <div class="col-6 mt-2 mb-2">
+            <div class="card h-100 project-card">
+                <h2 class="card-title text-center">NASA Image Repository</h2>
+                <h6 class="card-text text-center">Python (Flask Framework, Pandas), HTML, CSS</h6>
+                <img src="/static/images/nasa.png" class="card-img-top card-img-bottom mt-2 mb-2" alt="Project img">
+                <div class="card-body">
+                     <p class="card-text">
+                        A webpage that features NASA-released images of Earth taken from space, NASA's astronomy picture of the day (APOD), 
+                        and a map displaying real-time occurences of various natural events (specifically volcanic eruptions, wildfires, and severe storms). 
+                        This project was my first time using the Flask framework, and the aim was to create a repository for users to easily explore released NASA images
+                        along with experimenting with a new framework. It allows users to view up to date images of earth and interesting astronomy images.
+                    </p>
+                    <a class="card-link">Demo Hosted on Heroku</a>
+                    <a href="https://github.com/tiffanyng23/nasa-app" class="card-link" target="_blank">Instructions on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}

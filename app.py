@@ -1,6 +1,8 @@
 from flask import Flask, render_template
+from flask_bootstrap import Bootstrap5
 
 app = Flask(__name__)
+bootstrap = Bootstrap5(app)
 
 # Home Page 
 @app.route("/")
@@ -20,19 +22,9 @@ def contact():
 
 # Projects
 # Earthquake Tracker Dashboard
-@app.route("/earthquake-tracker")
+@app.route("/projects")
 def earthquakes():
-    return render_template("earthquakes.html")
-
-# Spotify Artist Explore Page
-@app.route("/spotify-explore")
-def spotify():
-    return render_template("spotify.html")
-
-# NASA Image Repository
-@app.route("/nasa-images")
-def nasa():
-    return render_template("nasa.html")
+    return render_template("projects.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
