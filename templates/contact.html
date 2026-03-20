@@ -3,5 +3,24 @@
 {% block title %} Contact {% endblock title %}
 
 {% block body %}
-Insert Email Contact Form
+<h3 class="mt-4">Feel free to contact me if you are interested in connecting! :)</h3>
+<div class="form-container mt-3">
+    <form action="/contact" method="POST">
+        <div class="meta-email">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="user_email" required>
+            <label for="subject">Subject: </label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="mt-2">
+            <label for="message"> Message: </label>
+            <br>
+            <textarea id="message" name="message" cols="120" required></textarea>
+            <br>
+            <button type="submit">Send</button>
+        </div>
+    </form>
+</div>
+
+
 {% endblock body %}
