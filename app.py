@@ -31,13 +31,13 @@ def contact():
         user_email = request.form.get("user_email")
         subject = request.form.get("subject")
         message = request.form.get("message")
-        print(user_name, user_email, subject, message)
 
         #send form information from portfolio email to personal email
         send_email(user_name, user_email, subject, message)
         return render_template("landing.html")
         
     return render_template("contact.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
