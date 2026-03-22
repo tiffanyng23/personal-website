@@ -7,7 +7,7 @@ def main():
 
 def send_email(user_name, user_email, subject, message):
     '''Receive email from user who filled out contact form''' 
-    #emails used for contact form 
+    #portfolio email sends contact form to personal email 
     portfolio_email=os.getenv(PORTFOLIO_EMAIL)
     personal_email = os.getenv(PERSONAL_EMAIL)
     #password for sender email
@@ -15,10 +15,11 @@ def send_email(user_name, user_email, subject, message):
 
     msg = EmailMessage()
     msg["Subject"] = subject
-    msg["From"] = portfolio_email #inquiry is sent via website email address
-    msg["To"]  = personal_email #inquiry is sent to my own email
+    msg["From"] = portfolio_email #portfolio email
+    msg["To"]  = personal_email #own email
     msg["Reply-To"] = user_email #users email
 
+    #content of contact form sent to own email
     msg.set_content(f"""
         Name: {user_name}
         Email: {user_email}
