@@ -8,29 +8,41 @@
     <div class="row g-3">
         <div class="col-6 mt-2 mb-2">
             <div class="card h-100 project-card">
-                <h2 class="card-title text-center">Word Search</h2>
-                <h6 class="card-text text-center">Python (Pygame)</h6>
-                <img src="/static/images/search.png" class="card-img-top card-img-bottom mt-2 mb-2" alt="Project img">
+                <h2 class="card-title text-center">NASA Image Repository</h2>
+                <h6 class="card-text text-center">Python (Flask)</h6>
+                <img src="/static/images/nasa.png" class="card-img-top card-img-bottom mt-2 mb-2" alt="Project img">
                 <div class="card-body">
                      <p class="card-text">
-                        Recreated the classic word search game. By default the board is 15x15 with 10 words to search for. 
-                        However, you can customize the board size and number of words to find.
+                        This project utilized NASA APIs to create a website where users can navigate NASA images and projects. It features several pages that are sorted into: "Earth", "Space", "Natural Events", and "Research" (recently added).
+                        The Earth page displays NASA-released images of Earth taken from space, the Space page displays NASA's astronomy picture of the day (APOD), 
+                        and the Natural Events page shows real-time occurences of various natural events (specifically volcanic eruptions, wildfires, and severe storms). 
                     </p>
-                    <a href="https://github.com/tiffanyng23/word-search" class="card-link" target="_blank">GitHub</a>
+                    <p>
+                        The component of this project I'm most proud of is my Research page, which is a newer addition to this website. This research page 
+                        leverages the NASA Open Science Data API to create a search engine for NASA-released projects conducted in space. 
+                        Users can type out specific keywords to filter/search for NASA projects.
+                        This API made detailed metadata for each project available, so in my search results, I was able to create summary cards for each project.
+                        The metadata included publications that were produced from the project. 
+                        I wanted to use the publication titles to search for their corresponding publication on Pubmed, so I integrated the Pubmed API to gather the Pubmed ID's of publications that were produced from the projects, so listed publications could be hyperlinked to the actual publication.
+                    </p>
+                    <a href="https://nasa-released-imgs.fly.dev/" class="card-link" target="_blank">Project Hosted on Fly.io</a>
+                    <a href="https://github.com/tiffanyng23/nasa-app" class="card-link" target="_blank">GitHub</a>
                 </div>
             </div>
         </div>
         <div class="col-6 mt-2 mb-2">
             <div class="card h-100 project-card">
-                <h2 class="card-title text-center">Fruit Salad Game</h2>
+                <h2 class="card-title text-center">Word Search</h2>
                 <h6 class="card-text text-center">Python (Pygame)</h6>
-                <img src="/static/images/fruit.png" class="card-img-top card-img-bottom mt-2 mb-2" alt="Project img">
+                <img src="/static/images/search.png" class="card-img-top card-img-bottom mt-2 mb-2" alt="Project img">
                 <div class="card-body">
                      <p class="card-text">
-                        Inspired by Fruit Ninja. Players have 60 seconds to click on the correct fruits that are falling down the screen to create a fruit salad. 
-                        The correct fruits are randomnly selected for each game and displayed on the top of the screen. 
+                        I recreated the classic word search game because I've always been very fond of word games. By default the board is 15x15 with 10 words to search for, but the board size, number of searchable words, and word length range of searchable words are customizable. 
+                        Players can simply click on the letters to form a guess. The boxes surrounding each letter that is clicked will turn yellow. 
+                        If the letters form a target word, then the boxes containing each letter will turn green.
+                        I intentionally didn't include a word bank in the game to make it more challenging, but when running the game, the terminal will produce an answer key which will list the target words and their location on the board.
                     </p>
-                    <a href="https://github.com/tiffanyng23/fruit-ninja-dupe" class="card-link" target="_blank">GitHub</a>
+                    <a href="https://github.com/tiffanyng23/word-search" class="card-link" target="_blank">GitHub</a>
                 </div>
             </div>
         </div>
@@ -38,30 +50,34 @@
     <div class="row mt-2 mb-2 g-3">
         <div class="col-6 mt-2 mb-2">
             <div class="card h-100 project-card">
-                <h2 class="card-title text-center">Wordle with a Twist</h2>
+                <h2 class="card-title text-center">Fruit Salad Game</h2>
                 <h6 class="card-text text-center">Python (Pygame)</h6>
-                <img src="/static/images/wordle.png" class="card-img-top card-img-bottom mt-2 mb-2" alt="Project img">
+                <img src="/static/images/fruit.png" class="card-img-top card-img-bottom mt-2 mb-2" alt="Project img">
                 <div class="card-body">
                      <p class="card-text">
-                        A twist on NYT's Wordle game. Same rules apply except players can progress through 4 levels, with the solvable word in each level increasing in length by 1 letter. 
+                        This game was inspired by Fruit Ninja, one of my favourite mobile games during my teens. 
+                        In this game, players have 60 seconds to click on the correct fruits that are falling down the screen (at randomized speeds), to create a fruit salad. 
+                        A single fruit salad is created when you have 1 of each fruit, so the final number of fruit salads at the end of the game
+                        will be determined by the lowest total out of the 3 target fruits. The total number of fruit salads is your final score
+                        The correct fruits are randomnly selected for each game, and displayed on the top of the screen. 
+                        Each incorrect fruit clicked will result in a 1 point reduction.
                     </p>
-                    <a href="https://github.com/tiffanyng23/wordle-dupe" class="card-link" target="_blank">GitHub</a>
+                    <a href="https://github.com/tiffanyng23/fruit-ninja-dupe" class="card-link" target="_blank">GitHub</a>
                 </div>
             </div>
         </div>
         <div class="col-6 mt-2 mb-2">
             <div class="card h-100 project-card">
-                <h2 class="card-title text-center">NASA Image Repository</h2>
-                <h6 class="card-text text-center">Python (Flask)</h6>
-                <img src="/static/images/nasa.png" class="card-img-top card-img-bottom mt-2 mb-2" alt="Project img">
+                <h2 class="card-title text-center">Wordle with a Twist</h2>
+                <h6 class="card-text text-center">Python (Pygame)</h6>
+                <img src="/static/images/wordle.png" class="card-img-top card-img-bottom mt-2 mb-2" alt="Project img">
                 <div class="card-body">
                      <p class="card-text">
-                        A webpage that features NASA-released images of Earth taken from space, NASA's astronomy picture of the day (APOD), 
-                        and a map displaying real-time occurences of various natural events (specifically volcanic eruptions, wildfires, and severe storms). 
-                        This aim of this project was to create a page to explore some NASA-released information and images.
+                        This is a twist on the <a href="https://www.nytimes.com/games/wordle/index.html" target="_blank">New York Times</a> Wordle game. 
+                        The same rules apply except players can progress through 4 levels, with the solvable word in each level increasing in length by 1 letter. 
+                        The player wins the game when they can complete all 4 levels. 
                     </p>
-                    <a href="https://nasa-released-imgs.fly.dev/" class="card-link" target="_blank">Project Hosted on Fly.io</a>
-                    <a href="https://github.com/tiffanyng23/nasa-app" class="card-link" target="_blank">GitHub</a>
+                    <a href="https://github.com/tiffanyng23/wordle-dupe" class="card-link" target="_blank">GitHub</a>
                 </div>
             </div>
         </div>
@@ -74,8 +90,16 @@
                 <img src="/static/images/spotify.png" class="card-img-top card-img-bottom mt-2 mb-2" alt="Project img">
                 <div class="card-body">
                     <p class="card-text">
-                        An artist discovery page that integrates artist data from Spotify's Web API to create a page used to explore the music discography of a new artist. 
-                        From this project, I was able to integrate my album-based listening approach with displaying tracks dynamically based on Spotify popularity value.
+                        An artist discovery dashboard that integrates artist data from Spotify's Web API, allowing users to explore the music discography of a new artist. 
+                        From this project, I was able to integrate my album-based listening approach with displaying tracks dynamically based on Spotify's popularity score (a score from 0-100 generated by Spotify for each album and track).
+                        There are 3 tabs in this dashboard: "Albums", "Album Tracks", and "Still Not Sure Where to Start?". 
+                    </p>
+                    <p>
+                        The Albums tab displays a table listing all of the artists albums with key information including the release date, popularity score, and number of tracks. Users are able to use keywords to search and filter the table, and they can also sort the albums in ascending or descending order at each column.
+                        The Album Tracks page is essentially a summary page of the artists tracks. Users will see the most "Mainstream" Tracks which are the tracks with the highest popularity score,
+                        and the most "Hipster" tracks which have the lowest popularity score. 
+                        At the bottom of the page, there is a bar chart where users can sort the album tracks based on popularity score. Users can also click on a bar that represents a song they are interested in, which will open a link to the song on Spotify.
+                        The "Still Not Sure Where to Start?"" page essentially allows users to randomnly select an album or song to listen to. Users can simply click a button and a randomn album or song from that artist will open up on Spotify.
                     </p>
                     <a href="https://spotify-app.fly.dev" target="_blank" class="card-link">Project Hosted on Fly.io</a>
                     <a href="https://github.com/tiffanyng23/spotify-app" target="_blank" class="card-link">GitHub</a>
@@ -89,10 +113,15 @@
                 <img src="/static/images/earthquake.png" class="card-img-top card-img-bottom mt-2 mb-2" alt="Project img">
                 <div class="card-body">
                      <p class="card-text">
-                        A global earthquake tracker dashboard that integrates the USGS Earthquake API to provide near real-time updates on earthquake events. 
-                        The dashboard features an earthquake counter and a side panel that allows for customization of time window, magnitude, and depth
-                        for 3 data visualization tools (scatter plot, scatter map, and data table). The goal of this project was to create a resource that depicts up-to-date earthquake data in 
-                        an accessible and insightful way. 
+                        A global earthquake tracker that integrates the USGS Earthquake API, to provide near real-time updates on earthquake events in an accessible and interactive way. 
+                        The dashboard features an earthquake counter and a side panel that allows for customization of time window, magnitude, and earthquake depth
+                        for 3 data visualization tools (scatter plot, scatter map, and data table). 
+                    </p>
+                    <p>
+                        The earthquake counter shows the number of earthquakes over the past hour, day, 7 days, and 30 days. You can filter the counter based on magnitude and depth.
+                        On the first tab, you will see a scatter plot that makes it easier to compare magnitudes of different earthquakes over a customizable time period.
+                        On the second tab, you will see a scatter map where earthquake events are plotted based on its coordinates. By filtering using the customization panel, you can gather insights on where earthquakes commonly occur at different magnitudes. 
+                        The third tab displays a table where you can search and filter for earthquakes by typing in keywords for either time, location, magnitude, or depth. You can also sort the earthquakes in ascending or descending order.
                     </p>
                     <a href="https://earthquake-tracker-app.fly.dev" target="_blank" class="card-link">Project Hosted on Fly.io</a>
                     <a href="https://github.com/tiffanyng23/earthquake-tracker" target="_blank" class="card-link">GitHub</a>
